@@ -44,6 +44,9 @@ app.post('/whatsapp', (req, res) => {
     res.end(twiml.toString());
 });
 
+app.get('/whatsapp', (req, res) => {
+    res.send("Yes its working")
+});
 /* twilioClient.messages
     .create({
         body: 'Your appointment is coming up on July 21 at 3PM',
